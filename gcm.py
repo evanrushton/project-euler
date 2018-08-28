@@ -34,7 +34,7 @@ def LCM(a, b):
   for prime_power_b in primes_powers_b:
     prime = prime_power_b[0] 
     power_b = prime_power_b[1]
-    power_a = dict_primes.get(prime)
+    power_a = dict_primes.get(prime) # Check if a divisible 
     power = max(power_b,power_a)       # Update power for primes in a and b
     dict_primes[prime] = power         # Add prime:power for b to dict
     for prime, power in dict_primes.iteritems():
@@ -42,7 +42,7 @@ def LCM(a, b):
   return multiple
 
 
-first = int(raw_input("Enter first digit "))
-second = int(raw_input("Enter second digit "))
-print LCM(first, second)
+# first = int(raw_input("Enter first digit "))
+# second = int(raw_input("Enter second digit "))
+# print LCM(first, second)
 

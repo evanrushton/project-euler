@@ -15,3 +15,5 @@ def gcd(n, m):
     m = n
     n = r
 
+def lcm(n, m):
+  return (n * m) / gcd(n, m)
